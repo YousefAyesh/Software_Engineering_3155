@@ -1,16 +1,16 @@
 ### Main Module - Entry Point ###
 
-import data
-import sandwich_maker
-import cashier
+import data_module
+import sandwich_maker_module
+import cashier_module
 
 # Create variables based on data dictionaries
-recipes = data.recipes
-resources = data.resources
+recipes = data_module.recipes
+resources = data_module.resources
 
 # Create instances from each class
-sandwich_machine = sandwich_maker.SandwichMaker(resources)
-cash_register = cashier.Cashier()
+sandwich_machine = sandwich_maker_module.SandwichMaker(resources)
+cash_register = cashier_module.Cashier()
 
 # Main program loop
 is_on = True
