@@ -58,3 +58,19 @@ def delete_item(item_id: int):
         return "Item not Found!"
 
     return food_instance
+
+
+@app.put("/items/{item_id}/price")
+def update_price(item_id: int, percentage: float):
+
+    for food in food_instance:
+        if food.id == item_id:
+            # Calculate new price
+            price_change = food.price * (percentage / 100)
+            food.price = round(food.price + price_change, 2)
+            return {
+                "message": f"Price updated by {percentage}%",
+                "item": food
+            }
+
+    return "Item not Found!"
