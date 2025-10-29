@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/Assignments/ITSC3155-Assignments" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ITSC3155-Students" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Sheep" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Website/group_bio_template" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Yousef_SamirProject" vcs="Git" />
   </component>
 </project>
